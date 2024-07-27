@@ -51,7 +51,7 @@ class Chat(Basechat):
         timestamp = str(int(now_utc.timestamp()))
         date = now_utc.strftime("%Y-%m-%d")
         # 拼接规范请求串
-        canonical_request = f"POST\n/\n\ncontent-type:{ct}\nhost:{host}\nx-tc-action:{action.lower()}\n\n{signed_headers}\n{hashlib.sha256(payload.encode('tf-8')).hexdigest()}"
+        canonical_request = f"POST\n/\n\ncontent-type:{ct}\nhost:{host}\nx-tc-action:{action.lower()}\n\n{signed_headers}\n{hashlib.sha256(payload.encode('utf-8')).hexdigest()}"
         # 拼接待签名字符串
         credential_scope = f"{date}/{service}/tc3_request"
         string_to_sign = f"{algorithm}\n{timestamp}\n{credential_scope}\n{hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()}"
