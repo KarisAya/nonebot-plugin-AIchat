@@ -22,12 +22,12 @@ class Config(BaseModel):
     qwin_api_key: str = ""
     qwin_host: str = "https://dashscope.aliyuncs.com/compatible-mode/v1"
     qwin_whitegroups: set[str] = {"744751179"}
-    qwin_blackgroups: set[str] = {}
+    qwin_blackgroups: set[str] = set()
 
     hunyuan_secret_id: str = ""
     hunyuan_secret_key: str = ""
     hunyuan_host: str = "hunyuan.tencentcloudapi.com"
-    hunyuan_whitegroups: set[str] = {}
+    hunyuan_whitegroups: set[str] = set()
     hunyuan_blackgroups: set[str] = {"744751179"}
 
 

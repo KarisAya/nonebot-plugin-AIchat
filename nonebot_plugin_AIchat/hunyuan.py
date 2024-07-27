@@ -1,7 +1,7 @@
 import json
 import hashlib
 import hmac
-from datetime import datetime,timezone
+from datetime import datetime, timezone
 import httpx
 from .main import Basechat
 from .config import config_data
@@ -23,10 +23,22 @@ class Chat(Basechat):
             {
                 "Role": "system",
                 "Content": prompt_system,
+            }
+        )
+        self.prompt_start.append(
+            {
+                "Role": "user",
+                "Content": "你好",
+            },
+        )
+        self.prompt_start.append(
+            {
+                "Role": "assistant",
+                "Content": "你好，有什么可以帮你的吗？",
             },
         )
         self.client = httpx.AsyncClient()
-        
+
     @staticmethod
     def headers(payload: str) -> dict:
         algorithm = "TC3-HMAC-SHA256"
@@ -39,10 +51,11 @@ class Chat(Basechat):
         timestamp = str(int(now_utc.timestamp()))
         date = now_utc.strftime("%Y-%m-%d")
         # 拼接规范请求串
-        canonical_request = f"POST\n/\n\ncontent-type:{ct}\nhost:{host}\nx-tc-action:{action.lower()}\n\n{signed_headers}\n{hashlib.sha256(payload.encode("utf-8")).hexdigest()}"
+        canonical_request = f"POST\n/\n\ncontent-type:{ct}\nhost:{host}\nx-tc-action:{action.lower()}\n\n{signed_headers}\n{hashlib.sha256(payload.encode('tf-8')).hexdigest()}"
         # 拼接待签名字符串
         credential_scope = f"{date}/{service}/tc3_request"
-        string_to_sign = f"{algorithm}\n{timestamp}\n{credential_scope}\n{hashlib.sha256(canonical_request.encode("utf-8")).hexdigest()}"
+        string_to_sign = f"{algorithm}\n{timestamp}\n{credential_scope}\n{hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()}"
+
         # 计算签名
         def sign(key, msg):
             return hmac.new(key, msg.encode("utf-8"), hashlib.sha256).digest()
@@ -62,7 +75,7 @@ class Chat(Basechat):
         }
 
     async def ChatCompletions(self, data: dict) -> str:
-        payload = json.dumps(data, separators=(',', ':'),ensure_ascii=False)
+        payload = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
         headers = self.headers(payload)
         resp = await self.client.post("https://hunyuan.tencentcloudapi.com", headers=headers, content=payload)
         return resp.json()["Response"]["Choices"][0]["Message"]["Content"]
@@ -74,7 +87,7 @@ class Chat(Basechat):
             {
                 "time": timestamp,
                 "Role": "user",
-                "Content": f"{nickname}({now.strftime("%Y-%m-%d %H:%M")}):{content}",
+                "Content": f"{nickname}({now.strftime('%Y-%m-%d %H:%M')}):{content}",
             },
         )
         self.messages = self.messages[-20:]
