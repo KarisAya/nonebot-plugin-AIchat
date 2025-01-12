@@ -59,13 +59,13 @@ toml = ">=0.10.2,<0.11.0"
 
 [[package]]
 name = "clovers-aichat"
-version = "0.2.0"
+version = "0.2.0.post1"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.12"
 files = [
-    {file = "clovers_aichat-0.2.0-py3-none-any.whl", hash = "sha256:691243ce9361a53f971dbf4593645b889e67885b87cb7ef2c5b082efbc91839f"},
-    {file = "clovers_aichat-0.2.0.tar.gz", hash = "sha256:db68ec22f280f72e6ba3815147827c6140d5a82d69bd7923185b82c2bdd4898c"},
+    {file = "clovers_aichat-0.2.0.post1-py3-none-any.whl", hash = "sha256:7f17623d38b35bd79b1cc11ff7169efce213e9ffc58b1c6515d7d8e8d3f0b90b"},
+    {file = "clovers_aichat-0.2.0.post1.tar.gz", hash = "sha256:15e4934f32db3d0bcb8330d5c179ff9eaca76250550011c4112c2766936b672b"},
 ]
 
 [package.dependencies]
@@ -967,4 +967,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "3d0911b4445930fe6c7b97f28ded9c9f20f85e403b60b2e257ad6ac3928fc9bc"
+content-hash = "c10520b19d2cfbabc6cf1ba3316015d34c8ddbec34ffc8f9703a21502a12085c"
