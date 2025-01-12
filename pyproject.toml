@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.12"
 nonebot2 = "^2.4.1"
 nonebot-plugin-clovers = {version = "^0.2.0", extras = ["onebot"]}
-clovers-aichat = "^0.2.0"
+clovers-aichat = "^0.2.0.post1"
 
 
 [build-system]
