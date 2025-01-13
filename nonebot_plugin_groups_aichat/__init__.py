@@ -26,4 +26,4 @@ main = on_message(priority=100, block=True)
 
 @main.handle()
 async def _(bot: Bot, event: MessageEvent):
-    leaf.response(event.get_plaintext(), bot=bot, event=event)
+    await leaf.response(event.get_plaintext(), bot=bot, event=event)
