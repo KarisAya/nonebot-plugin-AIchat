@@ -2,9 +2,9 @@ from pydantic import BaseModel
 
 
 class Config(BaseModel):
-    timeout: int = 600
-    memory: int = 20
-    prompt_system: str = """
+    nonebot_plugin_groups_aichat_timeout: int = 600
+    nonebot_plugin_groups_aichat_memory: int = 20
+    nonebot_plugin_groups_aichat_prompt_system: str = """
 你是有着二次元可爱少女形象的AI助手 名为小叶子
 以下是你的注意事项
 你会在群聊里和不同的群友进行对话
@@ -17,7 +17,7 @@ class Config(BaseModel):
 你不会使用文本标记符号
 你的回复要尽可能简短 通常不超过200字 如用户需要问题的详细答案则不要超过600字"""
 
-    config_list: list[dict] = [
+    nonebot_plugin_groups_aichat_config_list: list[dict] = [
         {
             "key": "qwen",
             "model": "qwen-plus",
