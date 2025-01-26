@@ -12,16 +12,11 @@
 
 AI 群聊机器人群聊
 
-<img src="https://img.shields.io/badge/python-3.12+-blue.svg" alt="python">
-<a href="./LICENSE">
-  <img src="https://img.shields.io/github/license/KarisAya/nonebot_plugin_groups_aichat.svg" alt="license">
-</a>
-<a href="https://pypi.python.org/pypi/nonebot_plugin_groups_aichat">
-  <img src="https://img.shields.io/pypi/v/nonebot_plugin_groups_aichat.svg" alt="pypi">
-</a>
-<a href="https://pypi.python.org/pypi/nonebot_plugin_groups_aichat">
-  <img src="https://img.shields.io/pypi/dm/nonebot_plugin_groups_aichat" alt="pypi download">
-</a>
+[![python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/)
+[![license](https://img.shields.io/github/license/KarisAya/nonebot_plugin_groups_aichat.svg)](./LICENSE)
+[![pypi](https://img.shields.io/pypi/v/nonebot_plugin_groups_aichat.svg)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
+[![pypi download](https://img.shields.io/pypi/dm/nonebot_plugin_groups_aichat)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 
 </div>
 
