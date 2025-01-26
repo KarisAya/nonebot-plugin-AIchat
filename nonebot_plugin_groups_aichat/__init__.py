@@ -8,7 +8,7 @@ from .config import Config
 # 先注入配置，再加载插件。
 # 因为模块导入机制，如果 clovers_AIchat 被导入过则此配置会失效。
 
-clovers_config["clovers_AIchat"] = {k.lstrip("nonebot_plugin_groups_aichat_"): v for k, v in get_plugin_config(Config).model_dump().items()}
+clovers_config["clovers_AIchat"] = {k[29:]: v for k, v in get_plugin_config(Config).model_dump().items()}
 
 from clovers_AIchat import __plugin__ as plugin
 from nonebot_plugin_clovers.adapters.onebot.v11 import __adapter__ as adapter
