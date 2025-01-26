@@ -19,8 +19,7 @@ AI 群聊机器人群聊
 [![pypi download](https://img.shields.io/pypi/dm/nonebot_plugin_groups_aichat)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
 <br />
 
-[![机器人 bug 研究中心](https://img.shields.io/badge/QQ%E7%BE%A4-744751179-maroon?)](https://qm.qq.com/q/n1gXhSfWlW)
-[![永恒之城](https://img.shields.io/badge/QQ%E7%BE%A4-744751179-navy?)](https://qm.qq.com/q/Tf2x9T7sGc)
+[![机器人 bug 研究中心](https://img.shields.io/badge/QQ%E7%BE%A4-744751179-maroon?)](https://qm.qq.com/q/3vpD9Ypb0c)
 
 </div>
 
