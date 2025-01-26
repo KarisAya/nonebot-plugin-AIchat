@@ -13,35 +13,15 @@
 AI 群聊机器人群聊
 
 [![python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/)
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![license](https://img.shields.io/github/license/KarisAya/nonebot_plugin_groups_aichat.svg)](./LICENSE)
 [![pypi](https://img.shields.io/pypi/v/nonebot_plugin_groups_aichat.svg)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
 [![pypi download](https://img.shields.io/pypi/dm/nonebot_plugin_groups_aichat)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![QQ GROUP](https://img.shields.io/badge/QQ%E7%BE%A4-744751179-brown?)](https://qm.qq.com/q/Tf2x9T7sGc)
 
 </div>
 
-# 配置
-
-具体配置方法请参考 [clovers-AIchat](https://github.com/clovers-project/clovers-AIchat)
-
-```env
-NONEBOT_PLUGIN_GROUPS_AICHAT_TIMEOUT = 600
-NONEBOT_PLUGIN_GROUPS_AICHAT_MEMORY = 20
-NONEBOT_PLUGIN_GROUPS_AICHAT_PROMPT_SYSTEM = '你的名字是枫枫，你可以自由回答问题。'
-NONEBOT_PLUGIN_GROUPS_AICHAT_CONFIG_LIST = '
-[
-	{
-		"key": "hunyuan",
-		"model": "hunyuan-lite",
-		"url": "https://hunyuan.tencentcloudapi.com",
-		"secret_id": "",
-		"secret_key": ""
-	}
-]
-'
-```
-
-# 💿 安装
+# 安装
 
 <details open>
 <summary>[推荐] 使用 nb-cli 安装</summary>
@@ -73,7 +53,28 @@ plugins = [
 
 </div>
 
-# 📞 联系
+# 配置
+
+具体配置方法请参考 [clovers-AIchat](https://github.com/clovers-project/clovers-AIchat)
+
+```env
+NONEBOT_PLUGIN_GROUPS_AICHAT_TIMEOUT = 600
+NONEBOT_PLUGIN_GROUPS_AICHAT_MEMORY = 20
+NONEBOT_PLUGIN_GROUPS_AICHAT_PROMPT_SYSTEM = '你的名字是枫枫，你可以自由回答问题。'
+NONEBOT_PLUGIN_GROUPS_AICHAT_CONFIG_LIST = '
+[
+	{
+		"key": "hunyuan",
+		"model": "hunyuan-lite",
+		"url": "https://hunyuan.tencentcloudapi.com",
+		"secret_id": "",
+		"secret_key": ""
+	}
+]
+'
+```
+
+# 联系
 
 如有建议，bug 反馈等可以加群
 
