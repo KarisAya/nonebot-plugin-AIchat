@@ -16,6 +16,8 @@ AI 群聊机器人群聊
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![QQ GROUP](https://img.shields.io/badge/QQ%E7%BE%A4-744751179-brown?)](https://qm.qq.com/q/Tf2x9T7sGc)
 
+<br />
+
 [![license](https://img.shields.io/github/license/KarisAya/nonebot_plugin_groups_aichat.svg)](./LICENSE)
 [![pypi](https://img.shields.io/pypi/v/nonebot_plugin_groups_aichat.svg)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
 [![pypi download](https://img.shields.io/pypi/dm/nonebot_plugin_groups_aichat)](https://pypi.python.org/pypi/nonebot_plugin_groups_aichat)
