@@ -8,7 +8,7 @@
   <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-template/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText">
 </p>
 
-# nonebot-plugin-groups-aichat
+# NoneBot-Plugin-Groups-AIchat
 
 AI 群聊机器人群聊
 
