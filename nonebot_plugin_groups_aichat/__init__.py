@@ -21,6 +21,7 @@ __plugin_meta__ = PluginMetadata(
     description="AI群聊机器人群聊",
     usage="@BOT 聊天内容",
     type="application",
+    config=Config,
     homepage="https://github.com/KarisAya/nonebot_plugin_groups_aichat",
     supported_adapters={"nonebot.adapters.onebot.v11"},
 )
