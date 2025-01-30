@@ -39,3 +39,6 @@ driver.on_shutdown(leaf.shutdown)
 @on_message(priority=100, block=True).handle()
 async def _(bot: Bot, event: MessageEvent):
     await leaf.response(event.get_plaintext(), bot=bot, event=event)
+
+
+clovers_config.save()
