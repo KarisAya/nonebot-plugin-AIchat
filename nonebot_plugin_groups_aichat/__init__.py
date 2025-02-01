@@ -12,9 +12,7 @@ from nonebot_plugin_clovers.adapters.onebot.v11 import __adapter__ as adapter
 # 先注入配置，再加载插件。
 # 因为模块导入机制，如果 clovers_AIchat 被导入过则此配置会失效。
 
-clovers_config = CloversConfig.environ()
-
-clovers_config["clovers_AIchat"] = {k[29:]: v for k, v in get_plugin_config(Config).model_dump().items()}
+CloversConfig.environ()["clovers_AIchat"] = {k[29:]: v for k, v in get_plugin_config(Config).model_dump().items()}
 
 from clovers_AIchat import __plugin__ as plugin
 
@@ -39,6 +37,3 @@ driver.on_shutdown(leaf.shutdown)
 @on_message(priority=100, block=True).handle()
 async def _(bot: Bot, event: MessageEvent):
     await leaf.response(event.get_plaintext(), bot=bot, event=event)
-
-
-clovers_config.save()
